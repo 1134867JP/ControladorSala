@@ -51,7 +51,10 @@ Este projeto implementa um controlador de acesso que envolve dois Arduinos e dua
 
 ## Contribuidores
 
+  ### Rasp1
 - Ricardo Groth da Silva  (1134872)
 - Ricardo Basso Gunther  (1134953)
+
+  ### Rasp2
 - Nycolas Musskopf Fachi  (1134317)
 - João Pedro Rodrigues (1134867)  
