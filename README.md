@@ -6,8 +6,8 @@ Sistema de controle de acesso para salas utilizando RFID, Arduinos, Raspberry Pi
 
 Este projeto implementa um controlador de acesso que envolve dois Arduinos e duas Raspberry Pi.  
 - O *producer* (Raspberry Pi 1 + Arduino 1) detecta a aproximação de uma tag RFID e envia um evento via RabbitMQ.  
-- O *consumer* (Raspberry Pi 2 + Arduino 2) recebe o evento, verifica se a TAG está cadastrada (em SQLite ou arquivo `.txt`) e aciona LEDs e buzzer conforme o resultado.  
-- Modo de cadastro (‘C’): permite inserir, editar e excluir TAGs autorizadas pelo terminal.
+- O *consumer* (Raspberry Pi 2 + Arduino 2) recebe o evento, verifica se a TAG está cadastrada (em SQLite) e aciona LEDs e buzzer conforme o resultado.  
+- Modo de cadastro (‘C’): permite inserir, editar (‘E’) e excluir (‘X’) TAGs autorizadas pelo terminal.
 
 ## Funcionalidades
 
@@ -15,14 +15,14 @@ Este projeto implementa um controlador de acesso que envolve dois Arduinos e dua
 - Comunicação via RabbitMQ  
 - Cadastro, edição e remoção de TAGs (nome, UID, permissão e data de cadastro)  
 - Indicação visual (LED verde/vermelho) e sonora (buzzer)  
-- Arquivo de banco de dados em SQLite ou TXT  
+- Arquivo de banco de dados em SQLite
 
 ## Requisitos
 
 - Raspberry Pi (com Python 3)  
 - Arduino (IDE e bibliotecas RFID)  
 - Node de mensageria RabbitMQ  
-- SQLite (opcional) ou permissão de escrita em arquivo `.txt`  
+- SQLite  
 - Bibliotecas Python: `pika`, `sqlite3` (se SQLite for usado)
 
 ## Instalação
